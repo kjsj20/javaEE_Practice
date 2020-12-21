@@ -1,0 +1,16 @@
+{
+	"controller" : {
+		"/board/list.do" : "com.board.controller.ListController",
+		"/board/regist.do" : "com.board.controller.RegistController",
+		"/board/detail.do" : "com.board.controller.DetailController",
+		"/board/edit.do" : "com.board.controller.EditController",
+		"/board/delete.do" : "com.board.controller.DeleteController"
+	},
+	
+	"views" : {
+		"/view/board/list" : "/board/list.jsp",
+		"/view/board/reList" : "/board/list.do",
+		"/veiw/board/detail" : "/board/detail.jsp",
+		"/view/board/edit" : "/board/edit.jsp"
+	}
+}

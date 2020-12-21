@@ -1,0 +1,7 @@
+package com.cmmt.controller;
+
+import com.controller.Controller;
+
+public class RegistController implements Controller{
+
+}

@@ -1,0 +1,6 @@
+<%@page import="com.board.domain.Board"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+	int result = request.setAttribute("result");
+	Board board = request.setAttribute("board");
+%>

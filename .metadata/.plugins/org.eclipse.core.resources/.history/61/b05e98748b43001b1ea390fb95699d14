@@ -1,0 +1,29 @@
+package com.board.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.board.model.BoardDAO;
+import com.controller.Controller;
+
+public class EditController implements Controller{
+	BoardDAO boardDAO = new BoardDAO();
+	public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		int result = boardDAO.update(board);
+		
+		req.setAttribute("board", board);
+	}
+
+	public String getResultView() {
+		return "/view/board/edit";
+	}
+
+	public boolean isForward() {
+		return true;
+	}
+
+}

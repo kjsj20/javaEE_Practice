@@ -1,0 +1,9 @@
+{
+	"controller" : {
+		"/board/list.do" : "com.board.controller.ListController"
+	},
+	
+	"views" : {
+		"/view/board/list" : "/board/list.jsp"
+	}
+}

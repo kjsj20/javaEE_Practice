@@ -1,0 +1,19 @@
+{
+	"controller" : {
+		"/test.do" : "com.test.controller.TestController",
+		"/board/list.do" : "com.board.controller.ListController",
+		"/board/regist.do" : "com.board.controller.RegistController",
+		"/board/detail.do" : "com.board.controller.DetailController",
+		"/board/delete.do" : "com.board.controller.DeleteController",
+		"/board/edit.do" : "com.board.controller.EditController"
+	},
+	
+	"views" : {
+		"/view/test/test" : "/test/test.jsp",
+		"/view/board/list" : "/board/list.jsp",
+		"/view/board/detail" : "/board/detail.jsp",
+		"/view/board/reList" : "/board/list.do",
+		"/view/error/error" : "/error/error.jsp",
+		"/view/board/edit" : "/board/detail.do"
+	}
+}

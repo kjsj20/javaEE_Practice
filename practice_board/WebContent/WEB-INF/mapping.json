@@ -1,0 +1,9 @@
+{
+	"controller" : {
+		"/test.do" : "com.board.controller.TestServlet"
+	},
+	
+	"view" : {
+		"/view/test/result" : "/test/result.jsp"
+	} 
+}

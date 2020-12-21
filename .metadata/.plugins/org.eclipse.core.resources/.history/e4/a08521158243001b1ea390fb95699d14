@@ -1,0 +1,8 @@
+package com.mybatis.config;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+public class MybatisConfigManager {
+	InputStream inputStream;
+	SqlSessionFactory sqlSessionFacotry;
+}

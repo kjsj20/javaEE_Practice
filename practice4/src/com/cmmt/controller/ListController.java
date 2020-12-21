@@ -1,0 +1,29 @@
+package com.cmmt.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.cmmt.model.CmmtDAO;
+import com.controller.Controller;
+
+public class ListController implements Controller{
+	CmmtDAO cmmtDAO = new CmmtDAO();
+	public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		int board_id = Integer.parseInt(req.getParameter("board_id"));
+		List list =cmmtDAO.selectAll(board_id);
+		req.setAttribute("cmmtList", list);
+	}
+
+	public String getResultView() {
+		return "/view/cmmt/list";
+	}
+
+	public boolean isForward() {
+		return true;
+	}
+
+}

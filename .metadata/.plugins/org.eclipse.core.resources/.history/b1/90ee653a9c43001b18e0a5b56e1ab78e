@@ -1,0 +1,22 @@
+package com.cmmt.model;
+
+import java.util.List;
+
+import com.cmmt.domain.Cmmt;
+import com.mybatis.config.MybatisConfigManager;
+
+public class CmmtDAO {
+	MybatisConfigManager manager = MybatisConfigManager.getInstance();
+	
+	public List selectAll(int board_id) {
+		List list = null;
+		
+		return list;
+	}
+	
+	public int insert(Cmmt cmmt) {
+		int result = 0;
+		SqlSession sqlSession = manager.getSqlSession();
+		return result;
+	}
+}

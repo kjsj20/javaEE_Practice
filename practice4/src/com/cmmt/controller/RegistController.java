@@ -1,0 +1,36 @@
+package com.cmmt.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.cmmt.domain.Cmmt;
+import com.cmmt.model.CmmtDAO;
+import com.controller.Controller;
+
+public class RegistController implements Controller{
+	CmmtDAO cmmtDAO = new CmmtDAO();
+	public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String board_id = req.getParameter("board_id");
+		String msg = req.getParameter("msg");
+		String author = req.getParameter("author");
+		
+		Cmmt cmmt = new Cmmt();
+		cmmt.setBoard_id(Integer.parseInt(board_id));
+		cmmt.setMsg(msg);
+		cmmt.setAuthor(author);
+		int result = cmmtDAO.insert(cmmt);
+		req.setAttribute("result", result);
+	}
+
+	public String getResultView() {
+		return "/view/cmmt/regist";
+	}
+
+	public boolean isForward() {
+		return true;
+	}
+
+}

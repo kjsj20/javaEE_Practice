@@ -1,0 +1,7 @@
+package com.cmmt.model;
+
+import com.mybatis.config.MybatisConfigManager;
+
+public class CmmtDAO {
+	MybatisConfigManager manager = MybatisConfigManager.getInstance();
+}

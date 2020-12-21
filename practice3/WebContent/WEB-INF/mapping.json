@@ -1,0 +1,13 @@
+{
+	"controller" : {
+		"/test.do" : "com.board.controller.TestController",
+		"/board/list.do" : "com.board.controller.ListController",
+		"/board/detail.do" : "com.board.controller.DetailController"
+	},
+	
+	"views" : {
+		"/view/test" : "/test/test.jsp",
+		"/view/board/list" : "/board/list.jsp",
+		"/view/board/detail" : "/board/detail.jsp"
+	}
+}

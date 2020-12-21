@@ -1,0 +1,9 @@
+{
+	"controller":{
+		"/test.do" : "com.test.controller.TestController"
+	}, 
+	
+	"views":{
+		"/view/test/test" : "test/test.jsp"
+	}
+}

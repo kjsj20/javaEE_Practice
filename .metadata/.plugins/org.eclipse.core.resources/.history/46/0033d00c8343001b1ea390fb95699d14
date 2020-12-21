@@ -1,0 +1,11 @@
+package com.board.model;
+
+import com.mybatis.config.MybatisConfigManager;
+
+public class BoardDAO {
+	MybatisConfigManager manager = MybatisConfigManager.getInstance();
+	
+	public List selectAll() {
+		
+	}
+}

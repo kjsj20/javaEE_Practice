@@ -1,0 +1,9 @@
+package com.cmmt.domain;
+
+public class Cmmt {
+	private int cmmt_id;
+	private int board_id;
+	private String msg;
+	private String author;
+	private String cdate;
+}

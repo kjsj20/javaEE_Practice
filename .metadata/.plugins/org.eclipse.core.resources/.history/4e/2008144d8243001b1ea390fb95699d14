@@ -1,0 +1,17 @@
+package com.mybatis.config;
+
+import java.io.InputStream;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+
+public class MybatisConfigManager {
+	InputStream inputStream;
+	SqlSessionFactory sqlSessionFacotry;
+	
+	
+	private MybatisConfigManager() {
+		String resource = "com.mybatis.config.config.xml";
+		inputStream = Resources.getResourceAsStream(resource);		
+	}
+}

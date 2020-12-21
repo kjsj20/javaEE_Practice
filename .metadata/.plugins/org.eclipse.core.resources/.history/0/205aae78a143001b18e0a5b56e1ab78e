@@ -1,0 +1,10 @@
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+	List list = (List)request.getAttribute("cmmtList");
+	StringBuilder sb = new StringBuilder();
+	
+	sb.append("{");
+	sb.append("\"list\":[");
+	sb.append("]");
+%>

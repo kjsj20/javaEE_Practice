@@ -1,0 +1,12 @@
+{
+	"controller" : {
+		"/board/list.do" : "com.board.controller.ListController",
+		"/board/regist.do" : "com.board.controller.RegistController",
+		"/board/detail.do" : "
+	},
+	
+	"views" : {
+		"/view/board/list" : "/board/list.jsp",
+		"/view/board/reList" : "/board/list.do"
+	}
+}
