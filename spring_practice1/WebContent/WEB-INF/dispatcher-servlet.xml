@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="alwaysUseFullPath" value="true"></property>
+		<property name="mappings">
+			<props>
+				<prop key="/board/list">listController</prop>
+				<prop key="/board/detail">detailController</prop>
+				<prop key="/board/regist">registController</prop>
+				<prop key="/board/delete">deleteController</prop>
+				<prop key="/board/edit">editController</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id = "listController" class="com.mvcSpring.board.Controller.ListController"/>
+	<bean id = "detailController" class="com.mvcSpring.board.Controller.DetailController"/>
+	<bean id = "registController" class="com.mvcSpring.board.Controller.RegistController"/>
+	<bean id = "deleteController" class="com.mvcSpring.board.Controller.DeleteController"/>
+	<bean id = "editController" class="com.mvcSpring.board.Controller.EditController"/>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value = "/"/>
+		<property name="suffix" value = ".jsp"/>
+	</bean>
+
+</beans>

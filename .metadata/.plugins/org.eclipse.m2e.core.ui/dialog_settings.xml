@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="spring_practice1"/>
 			<item value="practice4"/>
 			<item value="practice3"/>
 			<item value="practice2"/>
@@ -11,6 +12,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="spring_practice1"/>
 			<item value="practice4"/>
 			<item value="practice3"/>
 			<item value="practice2"/>

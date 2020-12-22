@@ -14,10 +14,11 @@
 <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-<fullyQualifiedTypeName name="com.board.domain.Board"/>
-<fullyQualifiedTypeName name="com.board.model.BoardDAO"/>
 <fullyQualifiedTypeName name="com.mybatis.config.MybatisConfigManager"/>
 <fullyQualifiedTypeName name="com.cmmt.domain.Cmmt"/>
 <fullyQualifiedTypeName name="com.cmmt.model.CmmtDAO"/>
+<fullyQualifiedTypeName name="com.board.model.BoardDAO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.board.domain.Board"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 </qualifiedTypeNameHistroy>
